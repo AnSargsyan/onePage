@@ -1,0 +1,230 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 0 1px 0 red;
+   /* -ms-user-select: none; */
+    -webkit-tap-highlight-color: transparent;
+}
+
+html, body, main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    ;
+}
+
+main {
+    display: flex;
+    padding: 3%;
+    background-color: rgb(48 47 47);
+}
+
+container {
+    position: relative;
+    flex-direction: row;
+    background-color: #fff;
+}
+
+navigation {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    background-color: #000;
+}
+
+logo {
+    height: 20%;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding: 20px;
+}
+
+logoImage {
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+
+.menu {
+    display: flex;
+    color: #fff;
+}
+
+.nav_menu {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    cursor: pointer;
+    user-select: none;
+    padding: 15px;
+    opacity: .5;
+}
+
+li:hover {
+    opacity: 1;
+}
+
+.nav_menu li:active {
+    transform: translateY(1px);
+}
+
+.nav_menu i {
+    padding: 10px;
+    font-size: 17px;
+}
+
+ul{
+    display: flex;
+}
+
+li[marked] {
+    opacity: 1;
+}
+
+container, .tapDiv {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+.main {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: transparent;
+}
+
+wrapper {
+    display: flex;
+    height: 100%;
+    width: 80%;
+}
+#nav_item li {
+    display: block;
+}
+
+boxNavigation #nav_item li[selected] {
+    color: #000;
+}
+li[selected]::after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: #000;
+}
+
+.scheduleItem, wrapBox {
+    display: flex;
+    width: 100%;
+    height: 90px;
+}
+
+.scheduleItem {
+    display: flex;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+
+wrapBox{
+    /* border-radius: 10px; */
+    /* background-color: #fff; */
+    box-shadow: 0 3px 5px #ede7e7;
+}
+
+iconBox {
+    flex:1;
+}
+
+textBox{
+    flex:5;
+}
+
+userBox{
+    flex:2;
+}
+
+section {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+scroller {
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+}
+
+scroller::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+}
+
+section[vertical] scroller {
+    flex-direction: row; 
+}
+
+.main[home] section {
+    margin: 0;
+    background-color: transparent;
+}
+
+.item {
+    overflow: hidden;
+    display: flex;
+    flex-shrink: 0;
+    width: 50%;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+
+.boxContainer {
+    display: flex;
+    flex: 1;
+    height: 100%;
+    overflow: hidden;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+
+boxTop {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: inherit;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
