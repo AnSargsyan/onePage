@@ -20,7 +20,7 @@
                     <div  class="menu">
                         <ul class="nav_menu">
                             <li><i class="material-icons">person</i><text>Profile</text></li>
-                            <li><i class="material-icons">event</i><text>Schedule</text></li>
+                            <li marked="marked"><i class="material-icons">event</i><text>Schedule</text></li>
                             <li><i class="material-icons">equalizer</i><text>Overview</text></li>
                             <li><i class="material-icons">chat</i><text>Chat</text></li>
                             <li><i class="material-icons">settings</i><text>Settings</text></li>
@@ -42,12 +42,16 @@
                                         </boxNavigation>
                                         <wrap class="tab">
                                             <div home selected="selected" name="Recent Added" class="tapDiv">
-                                                <scroller>
+                                                <scroller class="scheduleItemBox">
                                                     <div class="scheduleItem">
-                                                        <wrapBox>
-                                                            <iconBox></iconBox>
-                                                            <textBox></textBox>
-                                                            <userBox></userBox>
+                                                        <wrapBox pointed="pointed"> 
+                                                            <iconBox><i class="material-icons">person</i></iconBox>
+                                                            <textBox><p>Illustation Templates</p><p fromTo>9:00 AM - 4:00 PM</p></textBox>
+                                                            <userBox>
+                                                                <userPic style="background-image: url(content/image/1.jpg)"></userPic>
+                                                                <userPic style="background-image: url(content/image/2.jpg)"></userPic>
+                                                                <userPic style="background-image: url(content/image/3.jpg)"></userPic>
+                                                            </userBox>
                                                         </wrapBox>
                                                     </div>
                                                     <div class="scheduleItem"><wrapBox>

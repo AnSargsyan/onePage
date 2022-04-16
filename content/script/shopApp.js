@@ -39,4 +39,14 @@ var myArr = [];
       event.preventDefault();
      
  });
+
+  var scheduleItem = $('div.scheduleItem').children();
+  // console.log(nav_menu);
+
+  scheduleItem.click(function(event){
+    scheduleItem.removeAttr('pointed', 'pointed');
+      $(this).attr('pointed', 'pointed')   
+      event.preventDefault();
+     
+ });
 }
